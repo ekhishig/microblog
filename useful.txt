@@ -1,0 +1,6 @@
+venv\Scripts\activate
+pip install flask
+python
+import flask
+set FLASK_APP=microblog.py
+python -m flask run
