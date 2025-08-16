@@ -4,3 +4,13 @@ python
 import flask
 set FLASK_APP=microblog.py
 python -m flask run
+
+pip install flask-sqlalchemy
+pip install flask-migrate
+flask db init
+flask db migrate -m "table"
+flask db upgrade
+app.app_context().push()
+db.session.add()
+db.session.commit()
+
